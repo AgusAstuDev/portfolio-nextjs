@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div>
-      <h1 className="font-inter font-bold">Hola mundo</h1>
+      <h1 className="font-inter">Hola mundo</h1>
     </div>
   );
 }
