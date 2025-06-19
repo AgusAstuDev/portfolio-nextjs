@@ -1,6 +1,7 @@
 // Components
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
+import AnimationBackground from "@/components/AnimationBackground";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="es">
       <body className={`${inter.variable} antialiased`}>
         <Header />
+        <AnimationBackground />
         {children}
         <Footer />
       </body>
