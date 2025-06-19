@@ -25,38 +25,15 @@ body {
   overflow: hidden;
 }
 
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-form,
-p,
-blockquote,
-th,
-td {
-  margin: 0;
-  padding: 0;
-}
-
 @keyframes gradient1 {
   0% {
-    transform: translate(-10%, -110%);
+    transform: translate(-10%, -100%);
   }
   50% {
-    transform: translate(-20%, -105%);
+    transform: translate(-20%, -95%);
   }
   100% {
-    transform: translate(-40%, -100%);
+    transform: translate(-40%, -90%);
   }
 }
 
@@ -80,7 +57,7 @@ td {
   left: -20%;
   mix-blend-mode: plus-lighter;
   position: absolute;
-  top: 50vh;
+  top: 55vh;
   width: 100%;
   scale: 1 0.555;
   transform: translateY(-50%);
