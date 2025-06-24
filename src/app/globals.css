@@ -9,6 +9,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #060606;
+    --background-secondary: rgba(6, 6, 6, 0.72);
     --principal-color: #f1f3f4;
     --secondary-color: #9aa0a6;
     --objects-background: #f1f3f414;

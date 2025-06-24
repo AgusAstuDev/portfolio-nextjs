@@ -8,11 +8,11 @@ interface SubmenuMobileProps {
 export default function SubmenuMobile({ isOpen }: SubmenuMobileProps) {
   return (
     <div
-      className={`absolute w-full h-screen bg-background/5 ${
+      className={`absolute w-full h-screen bg-transparent backdrop-blur-xs ${
         isOpen ? "flex" : "hidden"
       } `}
     >
-      <div className="flex bg-background w-full h-[300px] flex-col justify-center items-center gap-[20px]">
+      <div className="flex w-full h-[300px] bg-background flex-col justify-center items-center gap-[20px]">
         <nav className="flex flex-col items-center gap-[5px]">
           {menuItems.map((item) => (
             <a

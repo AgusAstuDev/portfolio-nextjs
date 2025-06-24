@@ -1,59 +1,23 @@
 "use client";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import SubmenuMobile from "./SubmenuMobile";
 import { menuItems, socialItems } from "@/utils/data";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // const menuItems = [
-  //   { text: "Sobre mí", href: "#sobre-mi" },
-  //   { text: "Experiencia", href: "#experiencia" },
-  //   { text: "Habilidades", href: "#habilidades" },
-  //   { text: "Contacto", href: "#contacto" },
-  //   { text: "Resúmen", href: "#resumen" },
-  // ];
-
-  // const socialItems = [
-  //   {
-  //     name: "LinkedIn",
-  //     href: "https://www.linkedin.com/in/tuperfil",
-  //     src: "/linkedIn_icon.svg",
-  //   },
-  //   {
-  //     name: "GitHub",
-  //     href: "https://github.com/tuperfil",
-  //     src: "/gitHub_icon.svg",
-  //   },
-  //   {
-  //     name: "Instagram",
-  //     href: "https://instagram.com/tuperfil",
-  //     src: "/instagram_icon.svg",
-  //   },
-  // ];
-
   const handleMenuToggle = () => {
     setIsMenuOpen((prev) => !prev);
   };
 
-  useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, [isMenuOpen]);
-
   return (
     <header
-      className={`w-full h-[54px] ${
-        isMenuOpen ? "bg-background" : "bg-[var(--objects-background)]"
-      }  border-b-[2px] border-[var(--objects-border)] border-solid`}
+      className={`w-full h-[54px] fixed top-0 z-50 ${
+        isMenuOpen
+          ? "bg-background border-none"
+          : "bg-[var(--objects-background)] border-b-[2px]"
+      }  border-[var(--objects-border)] border-solid`}
     >
       <div className="w-full max-w-[1440px] mx-auto h-full flex items-center justify-center md:justify-between px-4">
         <div className="flex-shrink-0">

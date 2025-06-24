@@ -1,4 +1,3 @@
-// src/data/headerData.ts
 export const menuItems = [
   { text: "Sobre mí", href: "#sobre-mi" },
   { text: "Experiencia", href: "#experiencia" },

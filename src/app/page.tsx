@@ -1,7 +1,9 @@
+import Hero from "@/components/home/Hero";
+
 export default function Home() {
   return (
     <div>
-      <h1 className="font-inter text-principal-color">Hola mundo</h1>
+      <Hero />
     </div>
   );
 }
