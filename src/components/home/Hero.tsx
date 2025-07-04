@@ -88,10 +88,10 @@ export default function Hero() {
         </h3>
         <p
           ref={descRef}
-          className="max-w-[450px] md:max-w-[600px] lg:max-w-[680px] text-balance text-gray-400 mx-auto leading-[18px] md:leading-[20px] lg:leading-[24px] text-sm md:text-base lg:text-lg text-center"
+          className="max-w-[450px] md:max-w-[600px] lg:max-w-[680px] text-balance text-[#9aa0a6] mx-auto leading-[18px] md:leading-[20px] lg:leading-[24px] text-sm md:text-base lg:text-lg text-center"
         >
-          Con más de 2 años de experiencia desarrollando webs, con múltiples
-          tecnologías priorizando la experiencia e interfaz de usuario.
+          Más de 2 años de experiencia desarrollando webs, priorizando la
+          experiencia e interfaz de usuario.
         </p>
       </div>
       <div className="w-max h-auto flex justify-center items-center gap-[15px] md:gap-[30px] mt-[30px]">

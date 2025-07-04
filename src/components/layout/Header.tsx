@@ -16,10 +16,10 @@ export default function Header() {
       className={`w-full h-[54px] fixed top-0 z-50 ${
         isMenuOpen
           ? "bg-background border-none"
-          : "bg-[var(--objects-background)] border-b-[2px]"
-      }  border-[var(--objects-border)] border-solid`}
+          : "bg-[var(--objects-background)] backdrop-blur-xs"
+      }  `}
     >
-      <div className="w-full max-w-[1440px] mx-auto h-full flex items-center justify-center md:justify-between px-4">
+      <div className="w-full max-w-[1440px] mx-auto h-full flex items-center justify-center md:justify-between px-4 border-b-[2px] border-[var(--objects-border)] border-solid">
         <div className="flex-shrink-0">
           <a href="#" className="font-inter font-bold text-xl">
             AgusAstuDev
