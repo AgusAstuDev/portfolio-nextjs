@@ -13,13 +13,13 @@ export default function Header() {
 
   return (
     <header
-      className={`w-full h-[54px] fixed top-0 z-50 ${
+      className={`w-full h-[54px] fixed top-0 z-50 border-b-[2px] border-[var(--objects-border)] border-solid ${
         isMenuOpen
           ? "bg-background border-none"
           : "bg-[var(--objects-background)] backdrop-blur-xs"
       }  `}
     >
-      <div className="w-full max-w-[1440px] mx-auto h-full flex items-center justify-center md:justify-between px-4 border-b-[2px] border-[var(--objects-border)] border-solid">
+      <div className="w-full max-w-[1440px] mx-auto h-full flex items-center justify-center md:justify-between px-4">
         <div className="flex-shrink-0">
           <a href="#" className="font-inter font-bold text-xl">
             AgusAstuDev

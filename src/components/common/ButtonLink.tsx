@@ -17,9 +17,9 @@ export const ButtonLink = forwardRef<HTMLAnchorElement, ButtonLinkProps>(
         ref={ref}
         href={href}
         onClick={onClick}
-        className="w-max h-auto flex gap-[10px] justify-center items-center px-[18px] py-[10px] text-secondary-color border-[var(--objects-border)] border-[1px] border-solid rounded-full bg-[var(--objects-background)] hover:bg-[var(--objects-background-hover)] cursor-pointer text-[13px] md:text-[15px] transform  transition-all duration-300 ease-in-out"
+        className="w-max h-auto flex gap-[10px] justify-center items-center px-[18px] py-[10px] text-secondary-color border-[var(--objects-border)] border-[1px] border-solid rounded-full bg-[var(--objects-background)] hover:bg-[var(--objects-background-hover)] cursor-pointer text-sm md:text-[15px] transform  transition-all duration-300 ease-in-out"
       >
-        {iconSrc && <Image src={iconSrc} alt={alt} width={16} height={16} />}
+        {iconSrc && <Image src={iconSrc} alt={alt} width={18} height={18} />}
         {text}
       </a>
     );
